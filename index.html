@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas Flash</title>
+    <link rel="stylesheet" href=".//css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Tarjetas Flash</h1>
+
+        <section class="progreso">
+            <div class="barra">
+                <div class="barra-relleno" id="barraRelleno"></div>
+            </div>
+
+            <span id="porcentaje">0%</span>
+            <span id="contador">1 de 20</span>
+        </section>
+
+        <section class="tarjeta">
+            <div class="contenido-tarjeta" id="contenidoTarjeta">
+                <p id="textoTarjeta">Cargando pregunta...</p>
+            </div>
+
+            <!-- Navegación -->
+            <div class="controles">
+                <button id="anterior" type="button">
+                    ‹ Anterior
+                </button>
+
+                <button id="respuesta" type="button">
+                    Mostrar respuesta
+                </button>
+
+                <button id="siguiente" type="button">
+                    Siguiente ›
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src=".//js/javaScript.js" defer></script>
+
+</body>
+
+</html>

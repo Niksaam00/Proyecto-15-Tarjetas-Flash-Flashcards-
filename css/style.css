@@ -1,0 +1,153 @@
+
+
+body {
+    background-color: #ffffff;
+    color: #111111;
+    min-height: 100vh;
+    padding: 35px 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: blue;
+    font-style: italic;
+}
+
+.progreso {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 34px;
+    padding: 4px;
+    border: 1px solid #c5c5c5;
+    border-radius: 9px;
+    margin-bottom: 12px;
+}
+.barra {
+    flex: 1;
+    height: 20px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.barra-relleno {
+    width: 0%;
+    height: 100%;
+    background-color: #072f9e;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+#porcentaje,
+#contador {
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#contador {
+    min-width: 62px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.tarjeta {
+    border: 2px solid #d0d0d0;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.contenido-tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 235px;
+    padding: 25px;
+    background-color: #f3f3f3;
+    border-radius: 7px;
+    text-align: center;
+}
+
+#textoTarjeta {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+
+.controles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    min-height: 34px;
+}
+
+button {
+    border: none;
+    background: transparent;
+    color: #333333;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 8px 3px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover:not(:disabled) {
+    background-color: #eeeeee;
+}
+
+button:focus-visible {
+    outline: 2px solid #777777;
+    outline-offset: 2px;
+}
+
+#respuesta {
+    color: #111111;
+    font-weight: bold;
+    text-align: center;
+}
+
+button:disabled {
+    color: #aaaaaa;
+    cursor: not-allowed;
+}
+@media (max-width: 400px) {
+    body {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .contenido-tarjeta {
+        min-height: 210px;
+        padding: 18px;
+    }
+
+    #textoTarjeta {
+        font-size: 17px;
+    }
+
+    button {
+        font-size: 11px;
+    }
+
+    .progreso {
+        gap: 6px;
+    }
+}
